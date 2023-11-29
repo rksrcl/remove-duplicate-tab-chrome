@@ -1,0 +1,1 @@
+console.log('Number of paragraphs on this page:', document.querySelectorAll('p').length);

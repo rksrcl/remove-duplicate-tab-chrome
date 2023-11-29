@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Remove Duplicate Tabs",
+    "version": "1.0",
+    "description": "A Chrome extension to remove duplicate tabs.",
+    "permissions": [
+      "tabs"
+    ],
+    "action": {
+
+      "default_popup": "popup.html"
+    },
+
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
